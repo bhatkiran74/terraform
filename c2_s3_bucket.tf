@@ -12,5 +12,6 @@ resource "aws_s3_bucket" "demo_bucket" {
   tags = {
     Name        = "My bucket"
     Environment = "Dev"
+    owner= "kiran bhat"
   }
 }
