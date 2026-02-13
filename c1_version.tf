@@ -7,6 +7,16 @@ terraform {
       version = ">= 6.0"
     }
   }
+
+
+  backend "s3" {
+    bucket       = "tfstate-dev-us-east-1-n3ycie"
+    key          = "dev/vpc/terraform.tfstate"
+    region       = "us-east-1"
+    encrypt      = true
+    use_lockfile = true
+  }
+
 }
 
 
