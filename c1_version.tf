@@ -10,7 +10,7 @@ terraform {
 
 
   backend "s3" {
-    bucket       = "tfstate-dev-us-east-1-n3ycie"
+    bucket       = "tfstate-dev-us-east-1-imn2ii"
     key          = "dev/vpc/terraform.tfstate"
     region       = "us-east-1"
     encrypt      = true
